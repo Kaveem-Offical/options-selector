@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import arithmetic from "../assets/arithmetic.png";
+import BasicAlgebra from "../assets/BasicAlgebra.png";
+import IntermediateAlgebra from "../assets/IntermediateAlgebra.png";
+import calculus from "../assets/calculus.png";
 
 const MathForm = () => {
   const [isDisabled, setDisabled] = useState(true);
@@ -36,31 +40,31 @@ const MathForm = () => {
       <div className=" grid md:grid-cols-4 max-w-7xl w-full text-center justify-center relative">
         <button
           onClick={selectOption}
-          className="justify-center w-[90%] m-5 py-5 px-5 text-left md:px-10 md:py-[27px] rounded-xl md:w-3/5 hover:outline hover:outline-2  hover:outline-[#e1d1b4] focus:outline-none focus:ring focus:ring-[#e1d1b4]"
+          className="justify-center w-[90%] m-5 py-5 px-5 text-center rounded-xl md:w-3/5 hover:outline hover:outline-2  hover:outline-[#e1d1b4] focus:outline-none focus:ring focus:ring-[#e1d1b4]"
         >
-          <img src="" alt="graph" className="w-5px h-5" />
+          <img src={arithmetic} alt="graph" className="" />
           <p>Arithmetic</p>
           <p className="text-gray-400">Introductory</p>
         </button>
         <button
           onClick={selectOption}
-          className="justify-center w-[90%] py-5 m-5 px-5 text-left md:px-10 md:py-[27px] rounded-xl md:w-3/5 hover:outline hover:outline-2  hover:outline-[#e1d1b4] focus:outline-none focus:ring focus:ring-[#e1d1b4]"
+          className="justify-center w-[90%] py-5 m-5 px-5 text-center rounded-xl md:w-3/5 hover:outline hover:outline-2  hover:outline-[#e1d1b4] focus:outline-none focus:ring focus:ring-[#e1d1b4]"
         >
-          <img src="" alt="graph" className="w-5px h-5" />
+          <img src={BasicAlgebra} alt="graph" className="" />
           <p>Basic Algebra</p>
           <p className="text-gray-400">Foundational</p>
         </button>
         <button
           onClick={selectOption}
-          className="justify-center w-[90%] py-5 px-5 m-5 text-left md:px-10 md:py-[27px] rounded-xl md:w-3/5 hover:outline hover:outline-2  hover:outline-[#e1d1b4] focus:outline-none focus:ring focus:ring-[#e1d1b4]"
+          className="justify-center w-[90%] py-5 px-5 m-5 text-center rounded-xl md:w-3/5 hover:outline hover:outline-2  hover:outline-[#e1d1b4] focus:outline-none focus:ring focus:ring-[#e1d1b4]"
         >
-          <img src="" alt="graph" className="w-5px h-5" />
+          <img src={calculus} alt="graph" className="" />
           <p>Intermediate Algebra</p>
           <p className="text-gray-400">Intermediate</p>
         </button>
         <button
           onClick={selectOption}
-          className="justify-center w-[90%] py-5 px-5 m-5 text-left md:px-10 md:py-[27px] rounded-xl md:w-3/5 hover:outline hover:outline-2  hover:outline-[#e1d1b4] focus:outline-none focus:ring focus:ring-[#e1d1b4]"
+          className="justify-center w-[90%] py-5 px-5 m-5 text-center rounded-xl md:w-3/5 hover:outline hover:outline-2  hover:outline-[#e1d1b4] focus:outline-none focus:ring focus:ring-[#e1d1b4]"
         >
           <img src="" alt="graph" className="w-5px h-5" />
           <p>Calculus</p>
